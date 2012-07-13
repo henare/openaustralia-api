@@ -15,7 +15,7 @@ class TestApi < Test::Unit::TestCase
 
   def test_get_divisions
     divs = @api.get_divisions(:search => 'bradfield')
-    assert_not_nil divs
+    assert divs.matches.size == 2
   end
 
   def test_get_debates_reps

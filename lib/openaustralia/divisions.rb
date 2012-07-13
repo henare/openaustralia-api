@@ -16,7 +16,7 @@ module OpenAustralia
   class DivisionResult
     include XML::Mapping
 
-    array_node :matches, "", "match", :class=>DivisionMatch, :default_value=>[]
+    array_node :matches, "result", "match", :class=>DivisionMatch, :default_value=>[]
   end
 
 end
