@@ -1,6 +1,6 @@
 # Open::Australia
 
-http://github.com/kuperov/open-australia-api
+http://github.com/kuperov/openaustralia_api
 
 This is a ruby wrapper for the Open Australia website (http://openaustralia.org.au).
 
@@ -13,7 +13,7 @@ This is a ruby wrapper for the Open Australia website (http://openaustralia.org.
 
 Add this line to your application's Gemfile:
 
-    gem 'open-australia'
+    gem 'openaustralia'
 
 And then execute:
 
@@ -21,7 +21,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install open-australia
+    $ gem install openaustralia
 
 ## Features/problems
 
@@ -33,8 +33,7 @@ Or install it yourself as:
     # spit out excerpts of what's been said
     # about the emissions trading scheme
 
-    require 'rubygems'
-    require 'open-australia'
+    require 'openaustralia'
 
     api = OpenAustralia::Api.new 'YOUR-API-KEY-HERE'
 

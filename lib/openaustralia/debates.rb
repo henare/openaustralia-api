@@ -2,7 +2,7 @@
 # relating to debates
 
 require 'xml/mapping'
-require 'open-australia/search_info'
+require 'openaustralia/search_info'
 
 module OpenAustralia
 

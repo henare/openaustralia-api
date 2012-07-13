@@ -3,13 +3,13 @@ require 'cgi'
 require 'xml/mapping'
 require 'rexml/document'
 
-require 'open-australia/divisions'
-require 'open-australia/representatives'
-require 'open-australia/senators'
-require 'open-australia/debates'
-require 'open-australia/hansard'
-require 'open-australia/search_info'
-require 'open-australia/comments'
+require 'openaustralia/divisions'
+require 'openaustralia/representatives'
+require 'openaustralia/senators'
+require 'openaustralia/debates'
+require 'openaustralia/hansard'
+require 'openaustralia/search_info'
+require 'openaustralia/comments'
 
 module OpenAustralia
 

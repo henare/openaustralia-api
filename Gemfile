@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in open-australia.gemspec
+# Specify your gem's dependencies in openaustralia.gemspec
 gemspec
