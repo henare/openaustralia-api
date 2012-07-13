@@ -1,8 +1,6 @@
-# Open::Australia
+# OpenAustralia
 
-http://github.com/kuperov/openaustralia_api
-
-This is a ruby wrapper for the Open Australia website (http://openaustralia.org.au).
+A Ruby wrapper for the [OpenAustralia API](http://www.openaustralia.org/api/).
 
 ## Requirements
 
