@@ -1,11 +1,4 @@
-
-$:.unshift File.join(File.dirname(__FILE__),'..','lib')
-
-require 'test/unit'
-require 'open-australia/api'
-require File.join(File.dirname(__FILE__),'test_helper')
-
-module OpenAustralia
+require 'test_helper'
 
 # We won't actually hit the web API during testing
 # because I don't want to distribute the API key...
@@ -16,10 +9,10 @@ module OpenAustralia
 # work this magic.
 class TestApi < Test::Unit::TestCase
   def setup
-    @api = Api.new 'DUMMYKEY'
+    @api = OpenAustralia::Api.new 'DUMMYKEY'
     @api.send(:xml_getter=, DummyXmlGetter.new)
   end
-  
+
   def test_get_divisions
     divs = @api.get_divisions(:search => 'bradfield')
     assert_not_nil divs
@@ -61,7 +54,6 @@ end
 
 # mock XmlGetter implementation
 class DummyXmlGetter
-
   def fetch(url)
     if url =~ /\/(get[A-Z]\w+)\?/
       function = $1
@@ -83,6 +75,4 @@ class DummyXmlGetter
       return nil
     end
   end
-end
-
 end

@@ -1,5 +1,4 @@
 require 'stringio'
 require 'test/unit'
-require File.dirname(__FILE__) + '/../lib/open-australia'
 
-
+require 'open-australia/api'

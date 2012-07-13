@@ -1,10 +1,4 @@
-
-$:.unshift File.join(File.dirname(__FILE__),'..','lib')
-
-require 'test/unit'
-require 'open-australia/api'
-
-include OpenAustralia
+require 'test_helper'
 
 # test the XML mapping objects
 # and see that they parse OK
@@ -24,7 +18,7 @@ class TestParse < Test::Unit::TestCase
 
   def test_parse_debate_search_reps
     doc = open_sample('debate_search_reps.xml')
-    srch = DebateSearch.load_from_xml doc.root
+    srch = OpenAustralia::DebateSearch.load_from_xml doc.root
 
     assert(srch != nil, 'should have parsed the search results object')
     assert(srch.search_description != nil, "search description didn't parse")
@@ -33,7 +27,7 @@ class TestParse < Test::Unit::TestCase
 
   def test_parse_debate_search_senate
     doc = open_sample('debate_search_senate.xml')
-    srch = DebateSearch.load_from_xml doc.root
+    srch = OpenAustralia::DebateSearch.load_from_xml doc.root
 
     assert(srch != nil, 'should have parsed the search results object')
     assert(srch.search_description != nil, "search description didn't parse")
@@ -42,11 +36,10 @@ class TestParse < Test::Unit::TestCase
 
   def test_hansard_utegate_search
     doc = open_sample('hansard_utegate_search.xml')
-    srch = HansardSearch.load_from_xml doc.root
+    srch = OpenAustralia::HansardSearch.load_from_xml doc.root
 
     assert(srch != nil, 'should have parsed the search results object')
     assert(srch.search_description != nil, "search description didn't parse")
     assert(srch.results.count > 0, 'should have multiple results')
   end
-
 end
