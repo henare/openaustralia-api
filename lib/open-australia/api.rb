@@ -1,10 +1,7 @@
-require 'rubygems'
 require 'open-uri'
 require 'cgi'
 require 'xml/mapping'
 require 'rexml/document'
-
-$:.unshift(File.dirname(__FILE__)+"/..")
 
 require 'open-australia/divisions'
 require 'open-australia/representatives'
