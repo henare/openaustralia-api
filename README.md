@@ -1,6 +1,13 @@
 # Open::Australia
 
-TODO: Write a gem description
+http://github.com/kuperov/open-australia-api
+
+This is a ruby wrapper for the Open Australia website (http://openaustralia.org.au).
+
+## Requirements
+
+* An account on openaustralia.org
+* An API key obtained from http://openaustralia.org/api
 
 ## Installation
 
@@ -16,9 +23,25 @@ Or install it yourself as:
 
     $ gem install open-australia
 
+## Features/problems
+
+* Wraps the current API calls
+* So far no validation on validity of parameters or search terms
+
 ## Usage
 
-TODO: Write usage instructions here
+    # spit out excerpts of what's been said
+    # about the emissions trading scheme
+
+    require 'rubygems'
+    require 'open-australia'
+
+    api = OpenAustralia::Api.new 'YOUR-API-KEY-HERE'
+
+    search = api.get_hansard :search => 'emissions trading'
+    search.results.each do |result|
+      puts result.body
+    end
 
 ## Contributing
 

@@ -1,3 +1,4 @@
+Copyright (c) 2009 Alex Cooper
 Copyright (c) 2012 Henare Degan
 
 MIT License

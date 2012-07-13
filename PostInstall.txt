@@ -1,4 +1,0 @@
-
-For more information on open-australia, see http://open-australia.rubyforge.org
-
-Don't forget you'll need to sign up for an API key for this gem to work.
