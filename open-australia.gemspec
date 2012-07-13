@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "open-australia"
   gem.require_paths = ["lib"]
   gem.version       = Open::Australia::VERSION
+
+  gem.add_dependency 'xml-mapping'
+  gem.add_dependency 'rake'
 end
