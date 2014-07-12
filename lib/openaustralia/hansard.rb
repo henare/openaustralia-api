@@ -44,7 +44,7 @@ module OpenAustralia
     numeric_node :hpos, 'hpos'
     numeric_node :htype, 'htype'
     numeric_node :major, 'major'
-    numeric_node :hdate, 'hdate'
+    text_node    :hdate, 'hdate'
 
     object_node :speaker, 'speaker', :class => HansardSpeaker,
       :default_value => nil
