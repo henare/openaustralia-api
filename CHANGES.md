@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2014-07-13
+
+* Add date to Hansard results by @mfeckie
+
 ## 1.0.0 - 2012-07-13
 
 * Major overhaul to bring gem up to date

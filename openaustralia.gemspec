@@ -2,7 +2,7 @@
 require File.expand_path('../lib/openaustralia/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Henare Degan", "Alex Cooper"]
+  gem.authors       = ["Henare Degan", "Alex Cooper", "Martin Feckie"]
   gem.email         = ["henare.degan@gmail.com"]
   gem.description   = 'OpenAustralia API'
   gem.summary       = 'Ruby wrapper for the OpenAustralia API'
