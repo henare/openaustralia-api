@@ -1,4 +1,4 @@
-# OpenAustralia [![Build Status](https://secure.travis-ci.org/henare/openaustralia-api.png?branch=master)](http://travis-ci.org/henare/openaustralia-api)
+# OpenAustralia [![Build Status](https://secure.travis-ci.org/henare/openaustralia-api.png?branch=master)](http://travis-ci.org/henare/openaustralia-api) [![Gem Version](https://badge.fury.io/rb/openaustralia.svg)](http://badge.fury.io/rb/openaustralia)
 
 A Ruby wrapper for the [OpenAustralia API](http://www.openaustralia.org/api/).
 
