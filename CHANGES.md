@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2014-07-20
+
+* Add more detail to senators in list response by @mfeckie
+
 ## 1.0.1 - 2014-07-13
 
 * Add date to Hansard results by @mfeckie
